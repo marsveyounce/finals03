@@ -1,0 +1,374 @@
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+/* IMAGES */
+image {
+    max-width: 100%;
+}
+
+/* MAIN STRUCTURE */
+body {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: none;
+    /* background-color: black; */
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+
+ul {
+    list-style: none;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li a {
+    color: #392917;
+}
+
+nav ul li a:hover {
+    color: #9E8976;
+}
+
+nav ul li a:focus {
+    color: #6A5745;
+}
+
+main {
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 100%), transparent 100%); */
+    background: rgba(255, 255, 255, 75%);
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.logo {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.active {
+    color: #D89E6C;
+}
+
+.title-container {
+    display: grid;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-position-y: -590px;
+}
+
+#title {
+    position: absolute;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #F8F7F4;
+    opacity: 85%;
+    z-index: 1;
+}
+
+#label {
+    position: absolute;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    font-style: normal;
+    color: #F8F7F4;
+    opacity: 85%;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.welcome {
+    display: grid;
+    grid-template: "a b"
+                "c c";
+    background: linear-gradient(to bottom, #392417, #795E4D);
+    color: #F8F7F4;
+}
+
+#welcome-image {
+    grid-area: a;
+}
+
+.text-container {
+    grid-area: b;
+}
+
+.welcome-text-1 {
+    font-family: "Nothing You Could Do", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+}
+
+.welcome-text-2 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+}
+
+.welcome-text-3 {
+    font-family: "Urbanist", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #F8F7F4;
+}
+
+.find-us-container {
+    grid-area: c;
+}
+
+.find-us-text {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.address-container{
+    background: #795E4D;
+    text-align: center;
+    color: #F8F7F4;
+}
+
+/* MAP */
+iframe {
+    height: 100%;
+    width: 100%;
+    border: 0;
+}
+
+#google-maps-canvas {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+}
+
+.map-generator {
+    max-width: 100%;
+    max-height: 100%;
+    background: none;
+}
+
+
+/* FOOTER */
+footer {
+    display: grid;
+    grid-template-columns: 50% 10% 50%;
+    background-color: #392417;
+    color: #F8F7FD;
+}
+
+#branding {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#branding p {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+}
+
+.contact-details {
+    color: #F8F7FD;
+}
+
+.contact-details ul {
+    margin: -0.3em 0;
+    text-transform: none;
+    font-size: 1em;
+}
+
+#subfooter {
+    background-color: #668747;
+    color: #392417;
+    padding: 0.7em 2em;
+}
+/* MEDIA QUERIES */
+@media only screen and (min-width: 769px) and (max-width: 1919px) {
+    .logo img {
+        max-width: 30%;
+    }
+
+    .nav-container {
+        padding: 20px;
+    }
+
+    nav {
+        flex-grow: 1;
+        margin-left: auto;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 5.5em 0 0;
+    }
+
+    ul {
+        font-size: 1.3em;
+    }
+
+    .title-container {
+        justify-items: left;
+    }
+
+    #title {
+        left: 0.7em;
+        bottom: 3em;
+        font-size: 5em;
+    }
+    
+    #label {
+        left: 1.2em;
+        bottom: 4.8em;
+        font-size: 2.7em;
+    }
+
+    .welcome {
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    #welcome-image {
+        width: 25em;
+        margin: 5em 1em 5em 6em;
+    }
+
+    .text-container {
+        margin: 7em;
+    }
+
+    .welcome-text-1 {
+        font-size: 3em;
+    }
+    
+    .welcome-text-2 {
+        margin: 1em 0;
+        font-size: 1.5em;
+    }
+    
+    .welcome-text-3 {
+        font-size: 1.5em;
+    }
+
+    .find-us-container {
+        text-align: center;
+    }
+
+    #find-us-logo {
+        width: 5%;
+        margin: 0 0 1em 0;
+    }
+
+    .find-us-text {
+        font-size: 2em;
+    }
+
+    .address-container{
+        padding: 0.5em 0 3em 0;
+        font-size: 2em;
+    }
+
+    .map{
+        height: 15em;
+    }
+
+    footer {
+        padding: 2em;
+    }
+    
+    #branding {
+        padding: 1.5em;
+    }
+
+    #branding img {
+        height: 10em;
+    }
+
+    #branding p {
+        padding: 0 1em;
+        font-size: 2em;
+    }
+
+    #socials {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    #socials img {
+        height: 2em;
+        margin: 0.5em;
+    }
+
+    .contact-details ul {
+        margin: -0.3em 0;
+    }
+
+    .contact-details ul li {
+        padding: 1.1em 0.5em;
+    }
+
+    #left {
+        position: absolute;
+        text-align: left;
+        font-size: 1em;
+    }
+
+    #right {
+        text-align: right;
+        font-size: 1em;
+    }
+}
+

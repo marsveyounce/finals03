@@ -1,0 +1,158 @@
+@media only screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .logo img {
+        max-width: 15%;
+    }
+
+    nav {
+        margin-top: 0.5em;
+    }
+
+    nav ul {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    ul {
+        font-size: 0.8em;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    .title-container {
+        background-size: 200%;
+        background-position: right;
+        background-position-x: -20em;
+        background-position-y: 0em;
+        justify-items: center;
+        justify-content: center;
+        align-content: center;
+        align-items: end;
+    }
+
+    #title {
+        bottom: 3.5em;
+        font-size: 2em;
+    }
+
+    #label {
+        bottom: 5.5em;
+        font-size: 1.1em;
+        letter-spacing: 0.02em;
+    }
+
+    .welcome {
+        justify-content: space-between;
+        align-items: center;
+        padding: 2em 2em 0.5em 2em;
+    }
+
+    #welcome-image {
+        width: 120%;
+    }
+
+    .text-container {
+        margin: 0 0 0 3em;
+    }
+
+    .welcome-text-1 {
+        font-size: 0.7em;
+        text-align: left;
+    }
+
+    .welcome-text-2 {
+        font-size: 0.4em;
+        padding: 1em 0 0 0;
+        text-align: left;
+    }
+
+    .welcome-text-3 {
+        font-size: 0.4em;
+        padding: 1em 0 0 0;
+        text-align: left;
+    }
+
+    .find-us-container {
+        text-align: center;
+        grid-area: c;
+    }
+
+    #find-us-logo {
+        width: 7%;
+        margin: 2em 0 0.1em 0;
+    }
+
+    .find-us-text {
+        font-size: 0.5em;
+    }
+
+    .address-container {
+        padding: 0.5em 0 2em 0;
+        font-size: 0.5em;
+    }
+
+    .map {
+        height: 7em;
+    }
+
+
+    footer {
+        display: grid;
+        grid-template-columns: 50% 10% 40%;
+        padding: 1em;
+        align-items: center;
+    }
+
+    #branding {
+        display: block;
+        text-align: right;
+    }
+
+    #branding img {
+        height: 5em;
+        margin-right: 0.65em;
+    }
+
+    #branding p {
+        font-size: 0.7em;
+        padding: 0.3em 1em 0 1.3em;
+    }
+
+    #socials {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+    }
+
+    #socials img {
+        height: 1em;
+        margin: 0.2em;
+    }
+
+    .contact-details ul {
+        /* margin: -5em 0; */
+        font-size: 0.3em;
+    }
+
+    .contact-details ul li {
+        padding: 1em 0.5em 2.7em 0.5em;
+    }
+
+    #left {
+        position: relative;
+        text-align: center;
+        font-size: 0.7em;
+    }
+
+    #right {
+        text-align: center;
+        font-size: 0.7em;
+    }
+}
